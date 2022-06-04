@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+  <script src="scripts/main.js" defer></script>
+  <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+  <main class="mainContent">
+    <div class="mainContent__wrapper">
+      <section class="mainContent__wrapper--balance">
+        <p class="mainContent__wrapper--balance_textTop">My balance</p>
+        <p class="mainContent__wrapper--balance_amount">$921.48</p>
+        <img src="assets/images/logo.svg" class="mainContent__wrapper--balance_logo">
+      </section>
+      <section class="mainContent__wrapper--expenses">
+        <p class="mainContent__wrapper--expenses_title">Spending - Last 7 days</p>
+        <div class="mainContent__wrapper--expenses_days" id="month">
+          <div class="mainContent__wrapper--expenses_day" style="--day: 'mon';"></div>
+        <div class="mainContent__wrapper--expenses_day" style="--day:'tue';"></div>
+        <div class="mainContent__wrapper--expenses_day" style="--day:'wed';"></div>
+        <div class="mainContent__wrapper--expenses_day" style="--day:'thu';"></div>
+        <div class="mainContent__wrapper--expenses_day" style="--day:'fri';"></div>
+        <div class="mainContent__wrapper--expenses_day" style="--day:'sat';"></div>
+        <div class="mainContent__wrapper--expenses_day" style="--day:'sun';"></div>
+        </div>
+        <div class="mainContent__wrapper--expenses_bottom">
+          <div class="mainContent__wrapper--expenses_bottom-main">
+            <p class="mainContent__wrapper--expenses_bottom-main--text">Total this month</p>
+            <div class="mainContent__wrapper--expenses_bottom-main--amount">$478.33</div>
+          </div>
+      
+          <div class="mainContent__wrapper--expenses_bottom-subInfo">
+            <span class="mainContent__wrapper--expenses_bottom-subInfo--percent">+2.4%</span>
+            from last month
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
